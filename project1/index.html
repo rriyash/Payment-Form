@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment-Form</title><style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin:15px 30px;
+            font-size:17px;
+            padding:4px;
+        }.container{
+          background-color:#aacdcf;
+          padding:5px 20px 15px 20px;
+          border:1px solid lightgray;
+          border-radius:4px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea{
+            width:100%;
+            padding:12px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            margin:8px;
+        }
+        fieldset{
+            background-color:#fff;
+            border:1px solid #ccc;
+        }
+        .main_heading{
+            text-align:center;
+        }
+        input[type="submit"]{
+            background-color:#17aa0f;
+            color:white;
+            padding:12px 20px;
+            border:none;
+            border-radius:4px;
+            cursor:pointer;
+            width:15%;
+        }
+        input[type="submit"]:hover{
+            background-color:rgb(213, 164, 48);
+        }
+    </style>
+</head>
+<body><div class="container">
+ <form action*"" method="get">
+    <h1 class="main_heading"><u>Payment Form</u></h1><hr>
+    <h2>Contact Information:-</h2>
+    <p>Name:*<input type="text" name="name" required></p>
+    <fieldset><!--for box-->
+        <legend>Gender*</legend>
+    <p>Female <input type="radio" name="gender" id="female">
+        Male <input type="radio" name="gender" id="male"></p>
+    </fieldset>
+    <p>Address: <textarea name="address" id="address" cols="190" rows="10"></textarea></p>
+    <p>Email:* <input type="email" name="email" id="email"required> </p>
+    <p>Pincode:* <input type="number" name="pincode" id="pincode"required</p>
+    <h2>Payment Information:-</h2>
+    <p>Payment mode:-
+        <select name="payment mode" id="payment mode">
+            <option value="">--Select payment mode--</option>
+            <option value="G pay">G pay</option>
+            <option value="Paytm">paytm</option>
+            <option value="challan">challan</option>
+        </select>
+    </p>
+    <p>Password*<input type="password" name="password"required</p><pre>
+    <input type="submit" value="pay Now"></pre>
+ </form> </div>  
+</body>
+</html>
